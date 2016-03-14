@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,700,300);
+
+
+ul, ol {
+    padding:0;
+    margin: 0;
+}
+
+input {
+    box-sizing: border-box;
+}
+.main-container {
+    margin:100px auto;
+    width:350px;
+    max-height:660px;
+    color:#3C3F4F;
+    font-family: Roboto;
+}
+
+.todo-container {
+    background-color: #EFBE66;
+    min-height:240px;
+    margin-bottom: 10px;
+    padding: 20px;
+
+}
+
+.input-container {
+    background-color: #3C3F4F;
+    
+}
+
+#task-input{
+    border:none;
+    width:350px;
+    transition: border 0.3s;
+    bottom: 0;
+    padding:15px;
+    background-color: #3C3F4F;
+    color:white;
+    width:80%;
+}
+
+
+input:focus{
+    outline: none;
+ 
+}
+
+input:focus + span:after {
+    color:ghostwhite;
+    font-weight:300;
+    font-size:10px;
+    content:"press enter";
+}
+
+.task-item {
+    background-color: #EFBE66;  
+    list-style-type: none;
+    line-height: 10px;
+    font-size:18px;
+    margin-left:5px;   
+    padding:10px;
+    word-wrap: break-word;
+    opacity: 1;
+    -webkit-transition: opacity 500ms linear;
+    transition: opacity 500ms linear;
+}
+
+.task-label {
+    cursor:pointer;
+
+}
+
+.check {
+    margin-right:10px;
+    border: 2px solid #f2f2f2;
+    outline:0;
+}
+
+.check:checked + label {
+    text-decoration: line-through;
+}
+
+
+.dragHighlight {    
+  opacity: .5;
+  background: #FFFFFF;
+}
+
+.task-label[contenteditable=true] {
+  text-align:left;
+  padding:1px;
+  border:1px solid #bbb;
+  color:#000;
+  background:#fff;
+    cursor:text;
+}
